@@ -4,7 +4,7 @@ import TopSeller1 from "@/public/Assets/a-one.webp";
 import { styles } from "@/utils/styles";
 import Ratings from "@/utils/Ratings";
 
-type Props = {};
+type Props = object;
 
 const SellerCard = (props: Props) => {
   return (

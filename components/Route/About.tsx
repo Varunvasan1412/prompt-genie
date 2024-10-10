@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import astro from "@/public/Assets/astro.png";
 
-type Props = {};
+type Props = object;
 
 const About = (props: Props) => {
   const router = useRouter();

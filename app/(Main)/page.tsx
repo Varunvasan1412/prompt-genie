@@ -14,16 +14,13 @@ import SellersBanner from "@/components/Shop/SellersBanner";
 import Footer from "@/components/Layout/Footer";
 import { Divider } from "@nextui-org/react";
 
-type Props = {};
-
-const page = (props: Props) => {
+const Page = () => {
+  // Changed to uppercase
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    if (!isMounted) {
-      setIsMounted(true);
-    }
-  }, [isMounted]);
+    setIsMounted(true);
+  }, []);
 
   if (!isMounted) {
     return null;
@@ -51,14 +48,7 @@ const page = (props: Props) => {
               Latest Prompts
             </h1>
             <div className="flex flex-wrap">
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
-              <PromptCard />
+              {Array(8).fill(<PromptCard />)}
             </div>
             <br />
             <BestSellers />
@@ -76,4 +66,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;

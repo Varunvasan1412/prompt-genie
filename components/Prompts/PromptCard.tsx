@@ -1,6 +1,6 @@
 import { Avatar, Button, Card, Divider } from "@nextui-org/react";
 import React from "react";
-import Fourteen from "@/public/Assets/fourteen.png";
+import Fourteen from "@/public/Assets/WhatsApp Image 2024-10-10 at 11.43.40_c405c9bf.jpg";
 import Chat from "@/public/Assets/chat.png";
 import { styles } from "@/utils/styles";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import Avatar1 from "@/public/Assets/avatar1.jpg";
 import Ratings from "@/utils/Ratings";
 import Link from "next/link";
 
-type Props = {};
+type Props = object;
 
 const PromptCard = (props: Props) => {
   return (

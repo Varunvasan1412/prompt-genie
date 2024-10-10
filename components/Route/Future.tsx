@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import FuturePic from "@/public/Assets/future.png";
 
-type Props = {};
+type Props = object;
 
 const Future = (props: Props) => {
   return (
